@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+</head>
+<body class="container">
+<h1 class="text-center">Using database<span th:text="${databaseName}"></span></h1>
+<div class="text-center" style="margin: 5%">
+    <div class="text-center btn-group-vertical">
+
+        <a href="/db/list-buildings-row-mapper" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">List
+            Buildings<br/> by row mapper</a>
+        <a href="/db/list-buildings-bean-property" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">List
+            Buildings<br/> by bean property row mapper</a>
+        <a href="/db/generate-buildings" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">Create
+            Test Data</a>
+        <a href="/db/clear" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">Clear DB</a>
+    </div>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

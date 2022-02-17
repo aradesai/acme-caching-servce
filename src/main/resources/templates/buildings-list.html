@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Buildings</title>
+</head>
+<body>
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Building Type</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Number</th>
+        </tr>
+        <tr th:each="building : ${buildingsList}">
+            <td th:text="${building.id}"></td>
+            <td th:text="${building.buildingType}"></td>
+            <td th:text="${building.city}"></td>
+            <td th:text="${building.street}"></td>
+            <td th:text="${building.buildingNumber}"></td>
+        </tr>
+    </table>
+
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

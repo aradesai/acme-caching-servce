@@ -1,0 +1,4 @@
+com/acme/cache/service/caching/AkmeApplicationTests.class
+com/acme/cache/service/caching/configuration/CaffeineCacheConfigTest$InnerConfig$MockedBean.class
+com/acme/cache/service/caching/configuration/CaffeineCacheConfigTest.class
+com/acme/cache/service/caching/configuration/CaffeineCacheConfigTest$InnerConfig.class

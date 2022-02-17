@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cache</title>
+</head>
+<body class="container">
+<h1 class="text-center">Using cache manager: <span th:text="${cacheName}"></span></h1>
+<div class="text-center" style="margin: 5%">
+    <div class="text-center btn-group-vertical">
+        <a href="/add-dev" role="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">Add
+            Developer</a>
+        <a href="/list-dev" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">List
+            Developers</a>
+        <a href="/create-test-data" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">Create
+            Test Data</a>
+        <a href="/clear" type="button" class="btn btn-primary btn-lg" style="margin: 5%; font-size: 5em">Clear Cache</a>
+    </div>
+    <div class="text-center btn-group-horizontal">
+        <a href="/color?button=1" role="button" class="btn btn-primary btn-lg" style="margin: 3%; font-size: 2em">First
+            Color</a>
+        <a href="/color?button=2" type="button" class="btn btn-primary btn-lg" style="margin: 3%; font-size: 2em">Second
+            Color</a>
+        <a href="/color?button=3" type="button" class="btn btn-primary btn-lg" style="margin: 3%; font-size: 2em">Third
+            Color</a>
+    </div>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
